@@ -1,0 +1,164 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Präoperative Pflege - Interaktive Lernspiel</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .slide {
+    display: none;
+    padding: 20px 20px;
+    min-height: 80vh;
+    box-sizing: border-box;
+    color: #fff;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 95%;
+    overflow: hidden;
+  }
+  .slide.active { display: block; }
+  .controls { text-align: center; margin-bottom: 10px; }
+  button {
+    padding: 12px 25px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    transition: 0.3s;
+  }
+  button:hover { background-color: #555; }
+  h2 { font-size: 24px; margin-top: 0; }
+  h3 { font-size: 20px; margin-top: 15px; }
+  ul { padding-left: 20px; font-size: 16px; }
+  /* ألوان مريحة ومعززة للذاكرة */
+  .section1 { background-color: #1b4f72; } /* التعريفات - أزرق داكن */
+  .section2 { background-color: #117864; } /* الأهداف - أخضر معتدل */
+  .section3 { background-color: #145a32; } /* تقييم الطبيب - أخضر داكن */
+  .section4 { background-color: #27ae60; } /* Pflegerische Aufgaben - أخضر فاتح */
+  .section5 { background-color: #82e0aa; color:#000; } /* Transport - أخضر فاتح فاتح */
+  .section6 { background-color: #d2b48c; color:#000; } /* Einschleusen - بني */
+  .signature { text-align: center; font-size: 14px; opacity: 0.8; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<!-- Section 1 -->
+<div class="slide section1 active">
+  <h2>📌 1. Definitionen</h2>
+  <ul>
+    <li>📝 <strong>Geplante Operation (elektiv)</strong>: freiwillig und vorher geplant.</li>
+    <li>⚡ <strong>Notfalloperation</strong>: unvorhergesehener, dringlicher Eingriff.</li>
+  </ul>
+</div>
+
+<!-- Section 2 -->
+<div class="slide section2">
+  <h2>🎯 2. Ziele der präoperativen Pflege</h2>
+  <ul>
+    <li>✅ Minimierung von Operationsrisiken.</li>
+    <li>⏱ Zeit- und Kostenersparnis.</li>
+    <li>🛡 Steigerung von Sicherheit und Vertrauen des Patienten.</li>
+    <li>🧘‍♂️ Psychische und physische Vorbereitung auf die Operation.</li>
+  </ul>
+</div>
+
+<!-- Section 3 -->
+<div class="slide section3">
+  <h2>🩺 3. Ärztliche Beurteilung vor der OP</h2>
+  <ul>
+    <li>📋 Anamnese und körperliche Untersuchung zur Ermittlung des Gesundheitszustandes.</li>
+    <li>❤️ Risikofaktoren: Herz-, Lungen-, Leber- oder Nierenerkrankungen.</li>
+    <li>💊 Medikamentöse Einstellung: Diabetes, Hypertonie, Herzinsuffizienz.</li>
+    <li>🧴 Hautzustand prüfen und ggf. Sanierung.</li>
+    <li>🩸 Eigenblutspende falls erforderlich.</li>
+  </ul>
+</div>
+
+<!-- Section 4: A + B (أول نقطتين فقط) -->
+<div class="slide section4">
+  <h2>🛏 4. Pflegerische Aufgaben präoperativ</h2>
+  <h3>📌 A. Administration</h3>
+  <ul>
+    <li>📝 Vorbereitung der Formulare und Einverständniserklärungen.</li>
+    <li>📂 Zusammenstellung und Kontrolle der Befunde.</li>
+    <li>📆 Terminkoordination und Überprüfung der Dokumentation.</li>
+  </ul>
+  <h3>🔧 B. Präoperative Maßnahmen</h3>
+  <ul>
+    <li>📊 Diagnostik: Vitalzeichen, Größe, Gewicht, Labor, EKG, Röntgen, spezifische Untersuchungen.</li>
+    <li>💊 Absetzen bestimmter Medikamente (Antikoagulanzien, orale Kontrazeptiva).</li>
+  </ul>
+</div>
+
+<!-- Präoperative Maßnahmen Slaide (التكملة فقط) -->
+<div class="slide section4">
+  <ul>
+    <li>🍽 Nahrungskarenz: 4 Std. keine feste Nahrung, 2 Std. keine Flüssigkeit, keine Kaugummis/Bonbons/Zigaretten. Vorsicht bei Diabetikern.</li>
+    <li>📚 Patientenedukation: En Bloc Aufstehen, Atemübungen, Gehstützen, schmerzreduzierende Lagerungen.</li>
+    <li>🛁 Haut- und Körperpflege: Duschen, Entfernung Nagellack/Schmuck, Reinigung Hautfalten.</li>
+    <li>🪒 Rasur des OP-Feldes: kurz vor OP, in Haarwuchsrichtung.</li>
+    <li>💤 Prämedikation: Angstlösung, Sedierung, Beobachtung nach Einnahme.</li>
+    <li>🚽 Darmreinigung (wenn notwendig): Vermeidung Inkontinenz, bessere OP-Bedingungen.</li>
+    <li>🦵 Thromboseprophylaxe: Frühmobilisation, Übungen, physikalische Maßnahmen, medikamentös.</li>
+  </ul>
+</div>
+
+<!-- Section 5 -->
+<div class="slide section5">
+  <h2>🚑 5. Transport in den OP-Bereich</h2>
+  <ul>
+    <li>📄 Unterlagen vollständig prüfen.</li>
+    <li>💍 Entfernung von Zahnprothesen, Schmuck, Hilfsmitteln.</li>
+    <li>🤝 Sicherer Transport zu zweit, Blickrichtung Patient.</li>
+  </ul>
+</div>
+
+<!-- Section 6 -->
+<div class="slide section6">
+  <h2>🏥 6. Einschleusen in den OP</h2>
+  <ul>
+    <li>🚪 Trennung Allgemeinbereich – Operationsbereich (Hygiene!).</li>
+    <li>👥 Übergabe an OP-Team mit Patienteninformationen.</li>
+    <li>🔒 Sicherstellung der Intimsphäre und Verabschiedung des Patienten.</li>
+  </ul>
+</div>
+
+<div class="controls">
+  <button onclick="prevSlide()">⬅ Vorherige</button>
+  <button onclick="nextSlide()">Nächste ➡</button>
+  <div class="signature">©️ Salah-Eddine</div>
+</div>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+}
+
+function nextSlide() {
+  if(currentSlide < slides.length - 1) currentSlide++;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  if(currentSlide > 0) currentSlide--;
+  showSlide(currentSlide);
+}
+</script>
+
+</body>
+</html>
